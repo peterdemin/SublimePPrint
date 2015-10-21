@@ -1,6 +1,7 @@
 import sublime
 import sublime_plugin
 from pprint import pformat
+from collections import OrderedDict  # noqa For use inside eval
 
 
 s = sublime.load_settings("PPrint.sublime-settings")
