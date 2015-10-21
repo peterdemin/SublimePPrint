@@ -17,7 +17,6 @@ class PprintCommand(sublime_plugin.TextCommand):
                 selection = region
             try:
                 text = self.view.substr(selection)
-                print(text)
                 obj = eval(text)
                 self.view.replace(edit, selection, pformat(obj))
             except Exception as exception:
